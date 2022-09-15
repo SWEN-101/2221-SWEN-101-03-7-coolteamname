@@ -25,6 +25,7 @@ An online E-store system built in github.io .. etc. <_replace with other platfor
 4.  
 
 ## Known bugs and disclaimers
+It is empty
 (It may be the case that your implementation is not perfect...)
 
 Document any known bug or nuisance.
