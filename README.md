@@ -7,7 +7,7 @@ An online E-store system built in github.io .. etc. <_replace with other platfor
 <_each team member clones repo and then edits/replace with their name below_>
 - Andy Xu
 - Hiroto Takeuchi
-- MEMBER03
+- Katie Lawson
 - MEMBER04
 
 
