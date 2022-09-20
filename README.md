@@ -8,7 +8,7 @@ An online E-store system built in github.io .. etc. <_replace with other platfor
 - Andy Xu
 - Hiroto Takeuchi
 - Katie Lawson
-- 
+- Peter Wu
 
 
 ## Prerequisites  <_add anything else that applies_>
