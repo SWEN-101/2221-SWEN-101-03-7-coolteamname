@@ -12,6 +12,7 @@
 	 */
 	let y;
 	let listLink = {
+		Home: '/',
 		Hiroto: '/hiroto',
 		Jeremy: '/jeremy',
 		Justin: '/justin',
@@ -24,7 +25,9 @@
 	$: isHome = path === '/';
 	$: key = Object.keys(listLink).find(key => listLink[key] === path);
 </script>
-
+<svelte:head>
+	<title>Stealth - {key}</title>
+</svelte:head>
 <svelte:window bind:scrollY={y} />
 
 <header class:shrink>
