@@ -1,6 +1,13 @@
 # create-svelte
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+An online E-store system built in github.io .. etc. <_replace with other platform requirements_>
+  
+## Team 
+<_each team member clones repo and then edits/replace with their name below_>
+- Andy Xu
+- Hiroto Takeuchi
+- Katie Lawson
+- Peter Wu
 
 ## Creating a project
 
