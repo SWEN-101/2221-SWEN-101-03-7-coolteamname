@@ -8,6 +8,7 @@ An online E-store system built in github.io .. etc. <_replace with other platfor
 - Hiroto Takeuchi
 - Katie Lawson
 - Peter Wu
+- Jeremy Smart
 
 ## Creating a project
 
