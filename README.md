@@ -1,8 +1,8 @@
-For the CA's
+## For the graders
+Technically none of the files in this repo is not HTML however all of the .svelte file has the exact same syntax as html page and we are treating it as html page
+For the HTML page assignment please open the files in the src/routes/[pageName]/+page.svelte 
 
-Technically none of the files in this repo is not HTML however all of the .svelte file has the exact same syntax as html page
-For creating the HTML page assignment please open the files in the src/routes. 
-
+To actually see the page follow the steps below
 
 ## Team 
 <_each team member clones repo and then edits/replace with their name below_>
@@ -11,10 +11,11 @@ For creating the HTML page assignment please open the files in the src/routes.
 - Katie Lawson
 - Peter Wu
 - Jeremy Smart
-# create-svelte
+
+# Setup
 Add node.js
-and be able to use npm commands
 from https://nodejs.org/en/
+and be able to use npm commands in the terminal
 
 ## Creating a project
 
