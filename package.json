@@ -11,6 +11,7 @@
 		"format": "prettier --plugin-search-dir . --write ."
 	},
 	"devDependencies": {
+		"@beyonk/svelte-mapbox": "^8.1.4",
 		"@fontsource/fira-mono": "^4.5.0",
 		"@neoconfetti/svelte": "^1.0.0",
 		"@sveltejs/adapter-auto": "next",
