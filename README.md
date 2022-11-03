@@ -1,45 +1,38 @@
-# Project Name: Cool project
-# Modify this document to expand any and all sections that are applicable for a better understanding from your users/testers/collaborators (remove this comment and other instructions areas for your FINAL release)
+# create-svelte
 
-An online E-store system built in github.io .. etc. <_replace with other platform requirements_>
-  
-## Team 
-<_each team member clones repo and then edits/replace with their name below_>
-- Andy Xu
-- Hiroto Takeuchi
-- Katie Lawson
-- 
+Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
 
+## Creating a project
 
-## Prerequisites  <_add anything else that applies_>
+If you're seeing this, you've probably already done this step. Congrats!
 
-- github accounts and basic github.io knowledge
-- 
--
+```bash
+# create a new project in the current directory
+npm create svelte@latest
 
-## How to access it or run it  <_add when applicable_>
+# create a new project in my-app
+npm create svelte@latest my-app
+```
 
-1. Clone the repository and go to the root directory.
-2. Do stuff
-3.  
-4.  
+## Developing
 
-## Known bugs and disclaimers
-It is empty
-(It may be the case that your implementation is not perfect...)
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
-Document any known bug or nuisance.
-If any shortcomings, make clear what these are and where they are located.
+```bash
+npm run dev
 
-## Link or full list of requirements
- <_you could linkto the specific private board where your backlog is kept_>
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
 
+## Building
 
+To create a production version of your app:
 
+```bash
+npm run build
+```
 
+You can preview the production build with `npm run preview`.
 
-## License
-
-<_replace with the type of license you will use for the project_> e.g. MIT License
-
-See LICENSE for details.
+> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
