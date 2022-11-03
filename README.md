@@ -10,6 +10,7 @@ For creating the HTML page assignment please open the files in the src/routes.
 - Hiroto Takeuchi
 - Katie Lawson
 - Peter Wu
+- Jeremy Smart
 # create-svelte
 Add node.js
 and be able to use npm commands
