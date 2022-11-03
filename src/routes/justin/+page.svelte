@@ -1,6 +1,6 @@
 <script>
 	// @ts-nocheck
-    
+
     // Uses the map box library in Svelte
     // https://github.com/beyonk-adventures/svelte-mapbox?ref=madewithsvelte.com
 	import { Map, Geocoder, Marker, controls } from '@beyonk/svelte-mapbox';
@@ -35,6 +35,7 @@
 	const api_key =
 		'pk.eyJ1IjoiaGVyb3BvbiIsImEiOiJjbGExbnAxcnkwOWZ3M3VwcWN5OW0xZmJjIn0.LhqWR4pWb1qsc240GqTuEA';
 </script>
+
 <div class="main">
     <Map
         accessToken={api_key}
