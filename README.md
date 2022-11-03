@@ -7,6 +7,7 @@
 # create-svelte
 Add node.js
 and be able to use npm commands
+from https://nodejs.org/en/
 
 ## Creating a project
 
