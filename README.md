@@ -1,3 +1,9 @@
+For the CA's
+
+Technically none of the files in this repo is not HTML however all of the .svelte file has the exact same syntax as html page
+For creating the HTML page assignment please open the files in the src/routes. 
+
+
 ## Team 
 <_each team member clones repo and then edits/replace with their name below_>
 - Andy Xu
