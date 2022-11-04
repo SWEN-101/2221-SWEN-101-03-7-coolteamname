@@ -2,7 +2,7 @@
     import profile from '$lib/images/profile.png';
 </script>
 
-<img src={profile}>
+<img alt="profile-pic" src={profile}>
 
 <style>
     img{
