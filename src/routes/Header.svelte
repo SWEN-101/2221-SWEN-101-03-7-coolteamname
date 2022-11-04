@@ -6,7 +6,7 @@
 	// import github from '$lib/images/github.svg';
 	import logo from '$lib/images/logo.png';
 	import { fade } from 'svelte/transition';
-	import Profile from './Profile.svelte';
+	import Profile from './Profile-image.svelte';
 	/**
 	 * @type {number}
 	 */
