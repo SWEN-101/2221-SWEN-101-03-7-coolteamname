@@ -2,8 +2,8 @@
 <script>
 	import { goto } from '$app/navigation';
 	import logo from '$lib/images/logo.png';
-	import { signInWithEmailAndPassword } from 'firebase/auth';
-	import { onMount } from 'svelte';
+	import google from '$lib/images/google-logo.png';
+	import { GoogleAuthProvider, signInWithEmailAndPassword, signInWithPopup } from 'firebase/auth';
 	import { auth } from '../firebaseConfig';
 
 	/**
@@ -38,6 +38,31 @@
 				errorMessage = error.message;
 			});
 	};
+
+	const googleSubmit = () => {
+		const provider = new GoogleAuthProvider();
+		signInWithPopup(auth, provider)
+			.then((result) => {
+				// This gives you a Google Access Token. You can use it to access the Google API.
+				const credential = GoogleAuthProvider.credentialFromResult(result);
+				// @ts-ignore
+				const token = credential.accessToken;
+				// The signed-in user info.
+				const user = result.user;
+				// ...
+			})
+			.catch((error) => {
+				// Handle Errors here.
+				errorCode = error.code;
+				errorMessage = error.message;
+				// The email of the user's account used.
+				const email = error.email;
+				// The firebase.auth.AuthCredential type that was used.
+				const credential = error.credential;
+				// ...
+			});
+	};
+
 	$: if (errorCode == 'auth/user-not-found') {
 		// @ts-ignore
 		errorMessage = 'User not found';
@@ -51,7 +76,7 @@
 <main>
 	<div class="box">
 		<div class="box-title">
-			<img src={logo} alt="logo" />
+			<img class="stealth" src={logo} alt="logo" />
 			<h1>Stealth</h1>
 		</div>
 		<div class="box-form">
@@ -85,7 +110,13 @@
 					/>
 				</div>
 				<div class="form-group">
-					<button on:click|preventDefault={submit}>LOGIN</button>
+					<div class="button-box">
+						<div class="google">
+							<img src={google} alt="g-login" class="google" />
+							<p class="tool-tip-text">Sign in with Google</p>
+						</div>
+						<button class="default-login-btn" on:click|preventDefault={submit}>LOGIN</button>
+					</div>
 				</div>
 			</form>
 			<div class="other-option">
@@ -120,7 +151,7 @@
 		height: 350px;
 		width: 360px;
 		background-color: var(--color-theme-1);
-		border: 1px solid black;
+		border: 2px solid black;
 		border-radius: 1rem;
 		padding: 0 2rem;
 	}
@@ -149,6 +180,11 @@
 		margin: 2rem 0;
 	}
 
+	.button-box {
+		display: flex;
+		flex-direction: row;
+	}
+
 	label.out {
 		top: -1.5rem;
 		left: 0;
@@ -166,7 +202,8 @@
 		color: white;
 	}
 
-	button:hover {
+	button:hover,
+	div.google:hover {
 		animation: pulse-animation 1.5s infinite;
 	}
 
@@ -198,12 +235,31 @@
 		position: relative;
 	}
 
-	img {
+	img.stealth {
 		position: absolute;
 		height: 2.5rem;
 		width: 2.5rem;
 		border-radius: 50%;
 		left: 1rem;
+	}
+
+	img.google {
+		height: 1.5rem;
+		width: 1.5rem;
+	}
+
+	div.google {
+		display: flex;
+		position: relative;
+		box-sizing: border-box;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		height: 2.5rem;
+		width: 3rem;
+		border-radius: 0.5rem;
+		margin-right: 1rem;
+		background-color: white;
 	}
 
 	.error {
@@ -215,5 +271,25 @@
 
 	.error > p {
 		margin: 0;
+	}
+
+	.tool-tip-text {
+		position: absolute;
+		visibility: hidden;
+		width: 120px;
+		background-color: white;
+		color: black;
+		border: solid 2px black;
+		text-align: center;
+		border-radius: 6px;
+		padding: 5px 0;
+		width: 120px;
+		top: 100%;
+		left: 50%;
+		margin-left: -60px;
+	}
+
+	.google:hover > .tool-tip-text {
+		visibility: visible;
 	}
 </style>

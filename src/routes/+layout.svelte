@@ -1,5 +1,5 @@
 <script>
-	import { initializeApp, getApp, getApps } from 'firebase/app';
+	import { getApps } from 'firebase/app';
 	import './styles.css';
 	import 'firebase/auth';
 	import { onMount } from 'svelte';
