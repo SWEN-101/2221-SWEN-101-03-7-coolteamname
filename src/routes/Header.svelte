@@ -17,7 +17,8 @@
 		Jeremy: '/jeremy',
 		Justin: '/justin',
 		Katie: '/katie',
-		Andy: '/andy'
+		Andy: '/andy',
+		Peter: '/peter'
 	};
 
 	$: shrink = y != 0;
