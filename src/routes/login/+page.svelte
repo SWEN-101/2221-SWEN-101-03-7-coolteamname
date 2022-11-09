@@ -119,7 +119,7 @@
 				</div>
 			</form>
 			<div class="other-option">
-				<a href="/forgot-password">Forgot Password?</a>
+				<a href="/login/forgot-password">Forgot Password?</a>
 				<a href="/register">Sign up</a>
 			</div>
 		</div>

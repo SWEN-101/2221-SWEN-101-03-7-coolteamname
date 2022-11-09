@@ -1,5 +1,6 @@
 <script>
 	import { auth } from "./firebaseConfig";
+	import Header from "./Header.svelte";
 
 	function logout(){
 		auth.signOut().then(
@@ -15,6 +16,7 @@
 	<title>Home</title>
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
+<Header />
 
 <a href="/hiroto"> Go to login</a>
 
