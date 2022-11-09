@@ -1,5 +1,23 @@
+<!-- @author Hiroto Takeuchi -->
+
 <script>
+	import { goto } from '$app/navigation';
+	import { onAuthStateChanged } from 'firebase/auth';
+	import { onMount } from 'svelte';
+	import { auth } from '../firebaseConfig';
 	import Header from '../Header.svelte';
+	onMount(()=>{
+		onAuthStateChanged(auth, (user) => {
+			if (user) {
+				// User is signed in, see docs for a list of available properties
+				// https://firebase.google.com/docs/reference/js/firebase.User
+				const uid = user.uid;
+			} else {
+				// User is signed out
+				goto('/login');
+			}
+		});
+	})
 </script>
 
 <div class="app">

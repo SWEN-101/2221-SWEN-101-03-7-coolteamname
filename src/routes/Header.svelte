@@ -13,7 +13,7 @@
 	let y;
 	let listLink = {
 		Home: '/',
-		Hiroto: '/hiroto',
+		Login: '/login',
 		Jeremy: '/jeremy',
 		Justin: '/justin',
 		Katie: '/katie',

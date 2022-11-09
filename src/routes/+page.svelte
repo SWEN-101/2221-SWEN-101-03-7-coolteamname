@@ -1,4 +1,14 @@
 <script>
+	import { auth } from "./firebaseConfig";
+
+	function logout(){
+		auth.signOut().then(
+			() => {
+				console.log("logged out");
+			}
+		);
+	}
+
 </script>
 
 <svelte:head>
@@ -7,3 +17,5 @@
 </svelte:head>
 
 <a href="/hiroto"> Go to login</a>
+
+<button on:click={logout}>Log out</button>
