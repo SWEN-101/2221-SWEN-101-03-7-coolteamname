@@ -15,3 +15,12 @@
 
 	<span slot="profile" />
 </EmptyHeader>
+
+<slot />
+
+
+<style>
+    h1 {
+        margin: 0.5rem;
+    }
+</style>

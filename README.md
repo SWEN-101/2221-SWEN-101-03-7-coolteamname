@@ -1,5 +1,5 @@
 ## For the graders
-Technically none of the files in this repo is not HTML however all of the .svelte file has the exact same syntax as html page and we are treating it as html page
+Technically none of the files in this repo is HTML however all of the .svelte file has the exact same syntax as html page and we are treating it as html page
 For the HTML page assignment please open the files in the src/routes/[pageName]/+page.svelte 
 
 To actually see the page follow the steps below

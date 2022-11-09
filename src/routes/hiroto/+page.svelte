@@ -49,7 +49,7 @@
 				const token = credential.accessToken;
 				// The signed-in user info.
 				const user = result.user;
-				// ...
+				goto("/")
 			})
 			.catch((error) => {
 				// Handle Errors here.
@@ -59,7 +59,6 @@
 				const email = error.email;
 				// The firebase.auth.AuthCredential type that was used.
 				const credential = error.credential;
-				// ...
 			});
 	};
 
@@ -111,10 +110,10 @@
 				</div>
 				<div class="form-group">
 					<div class="button-box">
-						<div class="google">
+						<button on:click|preventDefault={googleSubmit} class="google">
 							<img src={google} alt="g-login" class="google" />
 							<p class="tool-tip-text">Sign in with Google</p>
-						</div>
+						</button>
 						<button class="default-login-btn" on:click|preventDefault={submit}>LOGIN</button>
 					</div>
 				</div>
@@ -203,7 +202,7 @@
 	}
 
 	button:hover,
-	div.google:hover {
+	button.google:hover {
 		animation: pulse-animation 1.5s infinite;
 	}
 
@@ -248,7 +247,7 @@
 		width: 1.5rem;
 	}
 
-	div.google {
+	button.google {
 		display: flex;
 		position: relative;
 		box-sizing: border-box;
