@@ -7,8 +7,8 @@
 	export let data: PageData;
 	
 	let email = data.post.email
-	let errorCode:string;
-	let errorMessage:string;
+	let errorCode:string|undefined;
+	let errorMessage:string|undefined;
 
 	let relief = false;
 	onMount(()=>{
@@ -20,13 +20,12 @@
 	function send(){
 		sendPasswordResetEmail(auth, email)
 			.then(() => {
-				// Password reset email sent!
-				// ..
-				data.status = 200;
+				errorCode = undefined;
+				errorMessage = undefined;
 			})
 			.catch((error) => {
-				const errorCode = error.code;
-				const errorMessage = error.message;
+				errorCode = error.code;
+				errorMessage = error.message;
 				// ..
 			});
 	}
