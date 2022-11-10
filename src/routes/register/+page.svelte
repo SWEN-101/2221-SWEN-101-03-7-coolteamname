@@ -11,14 +11,8 @@
 	} from 'firebase/auth';
 	import { auth } from '../../lib/firebaseConfig';
 
-	/**
-	 * @type {undefined}
-	 */
-	let errorCode = undefined;
-	/**
-	 * @type {undefined}
-	 */
-	let errorMessage = undefined;
+	let errorCode;
+	let errorMessage;
 
 	$: email = '';
 	$: password1 = '';

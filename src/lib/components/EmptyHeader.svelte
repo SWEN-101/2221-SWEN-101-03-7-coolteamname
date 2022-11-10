@@ -43,30 +43,10 @@
                 {/if}
             </slot>
         </div>
-        <slot name='link' >
-            {#if shrink}
-                <div class="links" transition:fade={{ duration: 100 }}>
-                    {#each Object.keys(listLink) as link}
-                        <a href={listLink[link]}>{link}</a>
-                        <div class="divider" />
-                    {/each}
-                </div>
-            {/if}      
-        </slot>
         <slot name='profile'>
             <Profile />
 		</slot>
 	</div>
-	<slot name='link' >
-        {#if !shrink}
-            <div class="links" transition:fade={{ duration: 100 }}>
-                {#each Object.keys(listLink) as link}
-                    <a href={listLink[link]}>{link}</a>
-                    <div class="divider" />
-                {/each}
-            </div>
-        {/if}      
-    </slot>
 </header>
 
 <style>
@@ -105,36 +85,5 @@
 
 	h1 {
 		margin: 0.5rem;
-	}
-
-	a {
-		color: var(--color-theme-2);
-		text-decoration: underline;
-	}
-
-	div.links {
-		display: flex;
-		flex-grow: 1;
-		padding: 1rem;
-		justify-content: flex-end;
-	}
-
-	div.links-bottom {
-		display: flex;
-		flex-grow: 1;
-		padding-left: 1em;
-	}
-
-	.divider {
-		margin: 0.75em;
-		margin-top: 0;
-		height: 1.15rem;
-		width: 2px;
-		background-color: rgba(0, 0, 0, 0.7);
-		border-radius: 1px;
-	}
-
-	.divider:last-child {
-		display: none;
 	}
 </style>

@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { sendPasswordResetEmail } from 'firebase/auth';
 	import { auth } from '$lib/firebaseConfig';
-	import type { PageData } from './$types';
+	import type {PageData} from './$types';
 	import { onMount } from 'svelte';
 
 	export let data: PageData;
