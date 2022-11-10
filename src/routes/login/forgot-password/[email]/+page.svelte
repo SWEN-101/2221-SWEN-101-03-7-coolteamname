@@ -38,7 +38,7 @@
 	</div>
 {:else if !errorCode}
 	<div class="center">
-		<p>JK, check your email({data.email})</p>
+		<p>JK, check your email({email})</p>
 		<button on:click={send}> resend? </button>
 	</div>
 {:else}
