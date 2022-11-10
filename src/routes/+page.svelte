@@ -18,6 +18,6 @@
 </svelte:head>
 <Header />
 
-<a href="/hiroto"> Go to login</a>
+<a href="/login"> Go to login</a>
 
 <button on:click={logout}>Log out</button>
