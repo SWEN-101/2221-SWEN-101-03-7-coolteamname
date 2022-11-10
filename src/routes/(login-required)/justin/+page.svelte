@@ -1,6 +1,4 @@
 <script>
-	// @ts-nocheck
-
 	// Uses the map box library in Svelte
 	// https://github.com/beyonk-adventures/svelte-mapbox?ref=madewithsvelte.com
 	import { Map, Geocoder, Marker, controls } from '@beyonk/svelte-mapbox';
@@ -15,7 +13,6 @@
 	$: centeredHosp = listCoor[itemIndex];
 	$: lng = centeredHosp.coor[0];
 	$: lat = centeredHosp.coor[1];
-	// for some reason 1 is the lowest zoom you can do
 	let zoom = 14;
 	onMount(() => {
 		// Usage of methods like setCenter and flyto
@@ -40,15 +37,9 @@
 		accessToken={api_key}
 		bind:this={mapComponent}
 		on:recentre={(e) => console.log(e.detail.center.lat, e.detail.center.lng)}
-		options={{ scrollZoom: true }}
+		options={{ scrollZoom: false }}
 	>
-		<Marker
-			{lat}
-			{lng}
-			color="rgb(255,255,255)"
-			label="some marker label"
-			popupClassName="class-name"
-		/>
+		<Marker {lat} {lng} color="grey" label={centeredHosp.name} popupClassName="class-name" />
 		<NavigationControl />
 		<GeolocateControl options={{ some: 'control-option' }} on:eventname={eventHandler} />
 		<ScaleControl />
@@ -56,14 +47,14 @@
 </div>
 
 <style>
-    .spacer {
-        height: 1rem;
-    }
+	.spacer {
+		height: 1rem;
+	}
 	.main {
 		position: relative;
-		height: calc(100vh - 4rem);
+		height: calc(100vh - 2rem);
 		width: 100%;
-		z-index: -1;
+		z-index: 0;
 		padding: 0;
 	}
 	:global(.mapboxgl-map) {
