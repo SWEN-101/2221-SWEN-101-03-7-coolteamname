@@ -1,7 +1,5 @@
 <script>
-	// @ts-nocheck
-
-	import EmptyHeader from '../EmptyHeader.svelte';
+	import EmptyHeader from "$lib/components/EmptyHeader.svelte";
 </script>
 
 <!-- @author Hiroto signup page -->

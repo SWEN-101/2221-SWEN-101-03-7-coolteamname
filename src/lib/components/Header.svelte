@@ -7,10 +7,7 @@
 	import logo from '$lib/images/logo.png';
 	import { fade } from 'svelte/transition';
 	import Profile from './Profile-image.svelte';
-	/**
-	 * @type {number}
-	 */
-	let y;
+	let y=0;
 	let listLink = {
 		Home: '/',
 		Login: '/login',

@@ -7,13 +7,11 @@
 	import logo from '$lib/images/logo.png';
 	import { fade } from 'svelte/transition';
 	import Profile from './Profile-image.svelte';
-	/**
-	 * @type {number}
-	 */
+	
 	let y;
 	let listLink = {
 		Home: '/',
-		Hiroto: '/hiroto',
+		login: '/login',
 		Jeremy: '/jeremy',
 		Justin: '/justin',
 		Katie: '/katie',
