@@ -4,8 +4,8 @@
 	import { goto } from '$app/navigation';
 	import { onAuthStateChanged } from 'firebase/auth';
 	import { onMount } from 'svelte';
-	import { auth } from '../firebaseConfig';
-	import Header from '../Header.svelte';
+	import { auth } from '../../lib/firebaseConfig';
+	import Header from '$lib/components/Header.svelte';
 	onMount(()=>{
 		onAuthStateChanged(auth, (user) => {
 			if (user) {

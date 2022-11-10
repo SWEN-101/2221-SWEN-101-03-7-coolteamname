@@ -4,7 +4,7 @@
 	import logo from '$lib/images/logo.png';
 	import google from '$lib/images/google-logo.png';
 	import { GoogleAuthProvider, signInWithEmailAndPassword, signInWithPopup } from 'firebase/auth';
-	import { auth } from '../firebaseConfig';
+	import { auth } from '../../lib/firebaseConfig';
 
 	/**
 	 * @type {undefined}

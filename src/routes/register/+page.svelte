@@ -9,7 +9,7 @@
 		sendEmailVerification,
 		signInWithPopup
 	} from 'firebase/auth';
-	import { auth } from '../firebaseConfig';
+	import { auth } from '../../lib/firebaseConfig';
 
 	/**
 	 * @type {undefined}

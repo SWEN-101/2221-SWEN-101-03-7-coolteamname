@@ -1,24 +1,54 @@
-<script>
+<script lang="ts">
 	import { sendPasswordResetEmail } from 'firebase/auth';
-	import { auth } from 'src/routes/firebaseConfig';
+	import { auth } from '$lib/firebaseConfig';
+	import type { PageData } from './$types';
+	import { onMount } from 'svelte';
 
-	PageData
+	export let data: PageData;
+	
+	let email = data.post.email
+	let errorCode:string;
+	let errorMessage:string;
 
-	sendPasswordResetEmail(auth, email)
-		.then(() => {
-			// Password reset email sent!
-			// ..
-		})
-		.catch((error) => {
-			const errorCode = error.code;
-			const errorMessage = error.message;
-			// ..
-		});
+	let relief = false;
+	onMount(()=>{
+		setInterval(() => {
+			relief = true;
+		}, 4000);
+	})
+
+	function send(){
+		sendPasswordResetEmail(auth, email)
+			.then(() => {
+				// Password reset email sent!
+				// ..
+				data.status = 200;
+			})
+			.catch((error) => {
+				const errorCode = error.code;
+				const errorMessage = error.message;
+				// ..
+			});
+	}
+
 </script>
 
-<div class="center">
-	<p>Thats really unfortunate</p>
-</div>
+{#if relief}
+	<div class="center">
+		<p>Thats really unfortunate</p>
+	</div>
+{:else if !errorCode}
+	<div class="center">
+		<p>JK, check your email({data.email})</p>
+		<button on:click={send}> resend? </button>
+	</div>
+{:else}
+	<div class="center">
+		<p>JK, we couldn't find your email({email})</p>
+		<input bind:value={email} />
+		<button on:click={send}> resend? </button>
+	</div>
+{/if}
 
 <style>
 	.center {

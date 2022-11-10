@@ -1,6 +1,6 @@
 <script>
-	import { auth } from "./firebaseConfig";
-	import Header from "./Header.svelte";
+	import { auth } from "../lib/firebaseConfig";
+	import Header from "$lib/components/Header.svelte";
 
 	function logout(){
 		auth.signOut().then(

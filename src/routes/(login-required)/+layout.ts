@@ -1,17 +1,17 @@
 // @author Hiroto
 
-import { auth } from '../firebaseConfig';
+import { auth } from '../../lib/firebaseConfig';
 
 export async function load() {
-	if (auth.currentUser){
+	if (auth.currentUser) {
 		return {
 			props: {
 				user: auth.currentUser
 			}
-		}
+		};
 	}
 	return {
 		status: 302,
-		redirect: "/login"
+		redirect: '/login'
 	};
 }
