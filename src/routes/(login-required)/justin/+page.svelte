@@ -37,7 +37,7 @@
 		accessToken={api_key}
 		bind:this={mapComponent}
 		on:recentre={(e) => console.log(e.detail.center.lat, e.detail.center.lng)}
-		options={{ scrollZoom: false }}
+		options={{ scrollZoom: true }}
 	>
 		<Marker {lat} {lng} color="grey" label={centeredHosp.name} popupClassName="class-name" />
 		<NavigationControl />
