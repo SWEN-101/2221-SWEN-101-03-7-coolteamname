@@ -28,9 +28,7 @@
 	const onPassword2Blur = () => (passwordFocus = false);
 	const submit = () => {
 		if (password1 != password2) {
-			// @ts-ignore
 			errorCode = 1;
-			// @ts-ignore
 			errorMessage = 'Passwords do not match';
 			return;
 		}
@@ -55,7 +53,6 @@
 			.then((result) => {
 				// This gives you a Google Access Token. You can use it to access the Google API.
 				const credential = GoogleAuthProvider.credentialFromResult(result);
-				// @ts-ignore
 				const token = credential.accessToken;
 				// The signed-in user info.
 				const user = result.user;
@@ -74,7 +71,6 @@
 	};
 
 	$: if (errorCode == 'auth/user-not-found') {
-		// @ts-ignore
 		errorMessage = 'User not found';
 	}
 </script>
