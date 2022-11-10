@@ -52,7 +52,7 @@
 	}
 	.main {
 		position: relative;
-		height: calc(100vh - 2rem);
+		height: calc(90vh - 2rem);
 		width: 100%;
 		z-index: 0;
 		padding: 0;
