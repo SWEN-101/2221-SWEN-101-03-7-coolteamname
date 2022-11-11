@@ -10,7 +10,6 @@ export const load: PageServerLoad = async () => {
 	querySnapshot.forEach((doc) => {
 		const data = doc.data();
 		const id = doc.id;
-		console.log(id, data);
 		prop.push({ id, data });
 	});
 	return {
