@@ -3,16 +3,17 @@ import type { PageServerLoad } from './$types';
 import { db } from '$lib/firebaseConfig';
 
 export const load: PageServerLoad = async () => {
-	await getDocs(collection(db, 'users')).then((querySnapshot) => {
-		let prop: Array<{id:string,data:DocumentData}>= []
-		querySnapshot.forEach((doc) => {
-			const data = doc.data();
-			const id = doc.id
-			console.log(id, data);
-			prop.push({id, data})
-		});
-		return {
-			prop: prop
-		}
+	let querySnapshot = await getDocs(collection(db, 'users'));
+
+	let prop: Array<{ id: string; data: DocumentData }> = [];
+
+	querySnapshot.forEach((doc) => {
+		const data = doc.data();
+		const id = doc.id;
+		console.log(id, data);
+		prop.push({ id, data });
 	});
+	return {
+		prop: prop
+	};
 };
