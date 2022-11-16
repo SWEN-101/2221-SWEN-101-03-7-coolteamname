@@ -67,6 +67,7 @@
 		top: 0;
 		height: 6rem;
 		transition: height 0.2s;
+		z-index: 1;
 	}
 
 	header.shrink {
