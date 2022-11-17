@@ -7,24 +7,28 @@
             <h4> Past Appointments </h4>
             <hr />
             <p>
-                Let's see if this changes anything
+                -- This will be one past appointment date with the location
             </p>
             <p>
-                Ok
+                -- This will be another
             </p>
             <p>
-                It looks like doing separate paragraphs adds space between the lines of text. Good to know
+                -- And this another
             </p>
         </div>
         <div>
             <h4> Past Exams</h4>
             <hr />
-            <p>This is where past exams/tests will be</p>
+            <p>-- This is where past exams/tests will be</p>
+            <p>-- This will be maybe be shortcuts to when the exams were</p>
+            <p>-- Hopefully clicking the header will bring the user to the Profile page that still needs to be made</p>
         </div>
         <div>
             <h4> Pharmacies Near You</h4>
             <hr />
-            <p>This is where the nearest pharmacies will be</p>
+            <p>-- This is where the nearest pharmacies will be</p>
+            <p>-- Clicking on any of the pharmacies should hopefully bring the user to the map page, where it will show the location</p>
+            <p>-- We'll see if I can get it to work</p>
         </div>
     </div>
 
@@ -33,15 +37,15 @@
     .segments {
         display: flex;
         text-align: justify;
-        text-align: left;
+        text-align: center;
         height: 550px;
         background-color: white;
     }
 
     .segments > div {
         text-align: left;
-        width: 600px;
-        margin: 30px 40px 30px 40px;
+        width: 300px;
+        margin: 30px 20px 30px 20px;
         box-shadow: 4px 5px 11px 10px lightgray;
 
     }
