@@ -4,6 +4,8 @@
 
     <div class="segments">
         <div>
+            <h4> Past Appointments </h4>
+            <hr />
             <p>
                 Let's see if this changes anything
             </p>
@@ -15,9 +17,13 @@
             </p>
         </div>
         <div>
+            <h4> Past Exams</h4>
+            <hr />
             <p>This is where past exams/tests will be</p>
         </div>
         <div>
+            <h4> Pharmacies Near You</h4>
+            <hr />
             <p>This is where the nearest pharmacies will be</p>
         </div>
     </div>
@@ -26,15 +32,16 @@
 <style>
     .segments {
         display: flex;
-        align-items: left;
-        height: 480px;
+        text-align: justify;
+        text-align: left;
+        height: 550px;
         background-color: white;
     }
 
     .segments > div {
         text-align: left;
-        width: 500px;
-        margin: 30px;
+        width: 600px;
+        margin: 30px 40px 30px 40px;
         box-shadow: 4px 5px 11px 10px lightgray;
 
     }
