@@ -1,5 +1,5 @@
 <body>
-    <h4>History</h4>
+    <h2>History</h2>
 
     <div class="segments">
         <div>
@@ -27,6 +27,7 @@
         width: 90px;
         margin: 10px;
         flex: 1 1 200px;
+        box-shadow: 4px 5px 11px 10px lightgray;
 
     }
 </style>
