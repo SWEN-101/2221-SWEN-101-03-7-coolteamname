@@ -1,3 +1,5 @@
+<!-- author: Katie Lawson -->
+
 <body>
     <h1>History</h1>
     <hr />
