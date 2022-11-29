@@ -74,7 +74,7 @@
         position: relative;
         height: calc(100vh - 4rem);
         width: 100%;
-        z-index: -1;
+        z-index: 0;
         padding: 0;
     }
     :global(.mapboxgl-map) {
