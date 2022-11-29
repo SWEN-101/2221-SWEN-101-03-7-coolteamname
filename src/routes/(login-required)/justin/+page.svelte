@@ -11,15 +11,12 @@
     let listCoor = [{ name: 'RIT HealthCenter', coor: [-77.67217267797808, 43.08419644348089] }, { name: 'UR Medicine Strong Memorial Hospital', coor: [-77.6261525, 43.1225119] }];
 
     let mapComponent;
-    let itemIndex = 0;
-    $: Hosp1 = listCoor[itemIndex];
+    $: Hosp1 = listCoor[0];
     $: lng = Hosp1.coor[0];
     $: lat = Hosp1.coor[1];
-    let itemIndex1 = 1;
-    $: Hosp2 = listCoor[itemIndex1];
+    $: Hosp2 = listCoor[1];
     $: lng2 = Hosp2.coor[0];
     $: lat2 = Hosp2.coor[1];
-    // for some reason 1 is the lowest zoom you can do
     let zoom = 11;
     onMount(() => {
         // Usage of methods like setCenter and flyto
