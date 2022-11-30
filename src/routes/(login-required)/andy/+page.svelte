@@ -9,13 +9,13 @@
 	<h1>Appointments</h1>
 	<button
 		on:click={() => {
-			goto('create');
+			goto('andy/create');
 		}}>Make Appointments</button
 	>
 	<p />
 	<button
 		on:click={() => {
-			goto('list');
+			goto('andy/list');
 		}}>View Appointments</button
 	>
 </body>

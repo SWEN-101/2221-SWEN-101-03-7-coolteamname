@@ -1,6 +1,5 @@
 <script>
 	import { goto } from '$app/navigation';
-	import Header from '$lib/components/Header.svelte';
 </script>
 
 <!-- Andy's html file -->

@@ -9,13 +9,16 @@
 	import Profile from './Profile-image.svelte';
 	let y=0;
 	let listLink = {
-		Home: '/',
-		Login: '/login',
-		Jeremy: '/jeremy',
-		Justin: '/justin',
-		Katie: '/katie',
-		Andy: '/andy',
-		Peter: '/peter'
+		"Home": '/',
+		"Login": '/login',
+		"Jeremy": '/jeremy',
+		"Justin": '/justin',
+		"Katie": '/katie',
+		"Andy": '/andy',
+		"Appointments": '/andy/list',
+		"Make Appointments": '/andy/create',
+		"Create Appointments": '/andy/create',
+		"Peter": '/peter'
 	};
 
 	$: shrink = y != 0;
