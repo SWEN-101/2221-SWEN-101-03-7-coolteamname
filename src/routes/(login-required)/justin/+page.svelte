@@ -40,6 +40,7 @@
 
 <div class="spacer" />
 <div class="main">
+
     <Map
         accessToken={api_key}
         bind:this={mapComponent}
@@ -50,14 +51,14 @@
             {lat}
             {lng}
             color="rgb(247, 105, 2)"
-            label="Rochester Institute of Technology"
+            label={"Rochester Institute of Technology"}
             popupClassName="class-name"
         />
         <Marker
-            {lat2}
-            {lng2}
+            lat={lat2}
+            lng={lng2}
             color="rgb(247, 105, 2)"
-            label="UR Medicine Strong Memorial Hospital"
+            label={"UR Medicine Strong Memorial Hospital"}
             popupClassName="class-name"
         />
         <NavigationControl />
@@ -71,7 +72,7 @@
         height: 1rem;
     }
     .main {
-        position: relative;
+            position: relative;
         height: calc(100vh - 4rem);
         width: 100%;
         z-index: -1;
