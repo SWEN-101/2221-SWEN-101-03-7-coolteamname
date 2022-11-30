@@ -11,20 +11,29 @@
 	let listLink = {
 		"Home": '/',
 		"Login": '/login',
-		"Jeremy": '/jeremy',
-		"Justin": '/justin',
-		"Katie": '/katie',
-		"Andy": '/andy',
+		"Info": '/jeremy',
+		"Nearby Hospitals": '/justin',
+		"Profile": '/katie',
+		"Appointment Info": '/andy',
 		"Appointments": '/andy/list',
 		"Make Appointments": '/andy/create',
-		"Create Appointments": '/andy/create',
-		"Peter": '/peter'
+		"Confirm": '/andy/confirm',
+		"Medical Info": '/peter'
 	};
 
 	$: shrink = y != 0;
 	$: path = $page.url.pathname
 	$: isHome = path === '/';
 	$: key = Object.keys(listLink).find(key => listLink[key] === path);
+
+	let navList = {
+		"Home": "/",
+		"Info": "/jeremy",
+		"Appointment": "/andy",
+		"Nearby Hospitals": "/justin",
+		"Profile": "/katie",
+		"Medical Info": "/peter"
+	}
 </script>
 <svelte:head>
 	<title>Stealth - {key}</title>
@@ -43,8 +52,8 @@
 		</div>
 		{#if shrink}
 			<div class="links" transition:fade={{ duration: 100 }}>
-				{#each Object.keys(listLink) as link}
-					<a href={listLink[link]}>{link}</a>
+				{#each Object.keys(navList) as link}
+					<a href={navList[link]}>{link}</a>
 					<div class="divider" />
 				{/each}
 			</div>
@@ -53,8 +62,8 @@
 	</div>
 	{#if !shrink}
 		<div class="links-bottom" transition:fade={{ duration: 100 }}>
-			{#each Object.keys(listLink) as link}
-				<a href={listLink[link]}>{link}</a>
+			{#each Object.keys(navList) as link}
+				<a href={navList[link]}>{link}</a>
 				<div class="divider" />
 			{/each}
 		</div>
