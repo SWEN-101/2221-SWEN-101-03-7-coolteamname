@@ -37,29 +37,29 @@
 
 <div class="main">
     <div class="hosp_list">
-        <div>
-            <h3>hosp 1</h3>
-            <p>description</p>
+        <div class="location">
+            <h4 class="loc_name">Rochester Institute of Technology</h4>
+            <p class="descr">description</p>
         </div>
-        <div>
-            <h3>hosp 1</h3>
-            <p>description</p>
+        <div class="location">
+            <h4 class="loc_name">UR Medicine Strong Memorial Hospital</h4>
+            <p class="descr">description</p>
         </div>
-        <div>
-            <h3>hosp 1</h3>
-            <p>description</p>
+        <div class="location">
+            <h4 class="loc_name">Monroe Community Hospital</h4>
+            <p class="descr">description</p>
         </div>
-        <div>
-            <h3>hosp 1</h3>
-            <p>description</p>
+        <div class="location">
+            <h4 class="loc_name">Unity Specialty Hospital</h4>
+            <p class="descr">description</p>
         </div>
-        <div>
-            <h3>hosp 1</h3>
-            <p>description</p>
+        <div class="location">
+            <h4 class="loc_name">Rochester General Health System</h4>
+            <p class="descr">description</p>
         </div>
-        <div>
-            <h3>hosp 1</h3>
-            <p>description</p>
+        <div class="location">
+            <h4 class="loc_name">Highland Hospital of Rochester</h4>
+            <p class="descr">description</p>
         </div>
     </div>
     <Map
@@ -117,6 +117,27 @@
             label={"Highland Hospital of Rochester"}
             popupClassName="class-name"
         />
+        <Marker
+            lat={43.21030807495117}
+            lng={-77.69861602783203}
+            color="rgb(247, 105, 2)"
+            label={"Highland Hospital of Rochester"}
+            popupClassName="class-name"
+        />
+        <Marker
+            lat={43.21030807495117}
+            lng={-77.69861602783203}
+            color="rgb(247, 105, 2)"
+            label={"Highland Hospital of Rochester"}
+            popupClassName="class-name"
+        />
+        <Marker
+            lat={43.21030807495117}
+            lng={-77.69861602783203}
+            color="rgb(247, 105, 2)"
+            label={"Highland Hospital of Rochester"}
+            popupClassName="class-name"
+        />
         <NavigationControl />
         <GeolocateControl options={{ some: 'control-option' }} on:eventname={eventHandler} />
         <ScaleControl />
@@ -124,9 +145,6 @@
 </div>
 
 <style>
-    .spacer {
-        height: 1rem;
-    }
     .main {
         position: relative;
         height: calc(100vh - 4rem);
@@ -138,7 +156,7 @@
     }
     :global(.mapboxgl-map) {
         height: 100px;
-        width: 80%;
+        width: 75%;
         color: rgb(247, 105, 2);
         float: left;
     }
@@ -146,9 +164,22 @@
       cursor: pointer;
     }
     .hosp_list {
-        height: 100px;
-        width: 20%;
+        height: 100%;
+        width: 25%;
         float: left;
+        z-index: 1;
+        overflow-y: scroll;
+    }
+    .location {
+        background-color: #d7d7d7;
+        outline: 1px solid #c4c4c4;
+        padding: 12px;
+    }
+    .loc_name {
+        margin: 0;
+    }
+    .descr {
+        margin-bottom: 0;
     }
 </style>
 
