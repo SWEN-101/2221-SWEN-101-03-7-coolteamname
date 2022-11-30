@@ -184,7 +184,7 @@
 <style>
     .main {
         position: relative;
-        height: calc(100vh - 4rem);
+        height: calc(100vh - 3rem);
         width: 100%;
         z-index: 0;
         padding: 0;
@@ -219,7 +219,7 @@
         margin-bottom: 0;
     }
     .hosp_list {
-        height: calc(100vh - 4rem - 63px);
+        height: calc(100vh - 3rem - 63px);
         overflow-y: scroll;
     }
     .top {
