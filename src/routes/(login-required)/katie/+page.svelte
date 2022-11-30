@@ -18,18 +18,18 @@
             </h5>
             <hr />
             <p>
-                -- This will be one past appointment date with the location
+                -- 08/21/2014 - UR Medicine Strong Memorial Hospital 
             </p>
             <p>
-                -- This will be another
+                -- 07/31/2011 - Monroe Community Hospital
             </p>
             <p>
-                -- And this another
+                -- 05/18/2006 - Monroe Community Hospital
             </p>
         </div>
         <div>
             <h4> 
-                Past Exams
+                Past Exams/Procedures
             </h4>
             <hr />
             <a href="katie/past_exams">
@@ -37,9 +37,18 @@
                     width="200" 
                     height="200">
             </a>
-            <p>-- This is where past exams/tests will be</p>
-            <p>-- This will be maybe be shortcuts to when the exams were</p>
-            <p>-- Hopefully clicking the header will bring the user to the Profile page that still needs to be made</p>
+            <p>
+                -- Benign cyst removal: 11/13/2017 
+            </p>
+            <p> Operating was Dr. Michael Sinclair</p>
+            <p>
+                -- Tonsillectomy: 09/08/2014 
+            </p>
+            <p> Operating was Dr. Samuel Madison</p>
+            <p>
+                -- Laryngoscopy: 08/21/2014
+            </p>
+            <p> Performed  by Dr. Samuel Madison </p>
         </div>
         <div>
             <h4>
@@ -54,11 +63,11 @@
             <h5>
                 Current Pharmacy
             </h5>
-            <h6>put location of current pharmacy</h6>
+            <h6>CVS Pharmacy: 2709 Chili Ave, Rochester, NY</h6>
             <hr />
-            <p>-- UR Medicine Strong Memorial Hospital</p>
-            <p>-- Monroe Community Hospital</p>
-            <p>-- Unity Specialty Hospital</p>
+            <p>-- Wegmans Pharmacy: 745 Caulkins Rd, Rochester, NY</p>
+            <p>-- Walgreens: 670 Thurston Rd, Rochester, NY</p>
+            <p>-- CVS Pharmacy: 2325 Marketplace Dr, Rochester, NY</p>
         </div>
     </div>
 
@@ -68,7 +77,8 @@
         display: flex;
         text-align: justify;
         text-align: center;
-        height: 550px;
+        font-size: medium;
+        height: 650px;
         background-color: white;
     }
 
