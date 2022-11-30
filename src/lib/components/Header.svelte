@@ -28,6 +28,7 @@
 
 	let navList = {
 		"Home": "/",
+		"Login": "/login",
 		"Info": "/jeremy",
 		"Appointment": "/andy",
 		"Nearby Hospitals": "/justin",
