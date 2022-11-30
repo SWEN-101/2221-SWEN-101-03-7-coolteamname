@@ -17,28 +17,6 @@
             ---------------------------------------------------------------------------------------
         </p>
     </body4>
-
-
-    <a href = "src\routes\about\+page.svelte"> 
-        Home |
-    </a>
-    
-    <a href = "src\routes\about\+page.svelte"> 
-        Nearby Hospitals (Link WIP) |
-    </a>
-
-    <a href="src\routes\about\+page.svelte">
-        Chat with my Doc (Link WIP) |
-    </a>
-
-    <a href="src\routes\my profile\+page.svelte">
-        My Profile |
-    </a>
-
-
-    <p>
-
-    </p>
     <h1>
         <a href="src\routes\history\+page.svelte"> history</a>
 
