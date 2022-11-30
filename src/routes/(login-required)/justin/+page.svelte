@@ -36,30 +36,55 @@
 </script>
 
 <div class="main">
-    <div class="hosp_list">
-        <div class="location">
-            <h4 class="loc_name">Rochester Institute of Technology</h4>
-            <p class="descr">description</p>
+    <div class="container">
+        <div class="top">
+            <h3 style="margin: 0; color:white;">Nearby Hospitals</h3>
         </div>
-        <div class="location">
-            <h4 class="loc_name">UR Medicine Strong Memorial Hospital</h4>
-            <p class="descr">description</p>
-        </div>
-        <div class="location">
-            <h4 class="loc_name">Monroe Community Hospital</h4>
-            <p class="descr">description</p>
-        </div>
-        <div class="location">
-            <h4 class="loc_name">Unity Specialty Hospital</h4>
-            <p class="descr">description</p>
-        </div>
-        <div class="location">
-            <h4 class="loc_name">Rochester General Health System</h4>
-            <p class="descr">description</p>
-        </div>
-        <div class="location">
-            <h4 class="loc_name">Highland Hospital of Rochester</h4>
-            <p class="descr">description</p>
+        <div class="hosp_list">
+            <div class="location">
+                <h4 class="loc_name">Rochester Institute of Technology</h4>
+                <p class="descr">description</p>
+            </div>
+            <div class="location">
+                <h4 class="loc_name">UR Medicine Strong Memorial Hospital</h4>
+                <p class="descr">description</p>
+            </div>
+            <div class="location">
+                <h4 class="loc_name">Monroe Community Hospital</h4>
+                <p class="descr">description</p>
+            </div>
+            <div class="location">
+                <h4 class="loc_name">Unity Specialty Hospital</h4>
+                <p class="descr">description</p>
+            </div>
+            <div class="location">
+                <h4 class="loc_name">Rochester General Health System</h4>
+                <p class="descr">description</p>
+            </div>
+            <div class="location">
+                <h4 class="loc_name">Highland Hospital of Rochester</h4>
+                <p class="descr">description</p>
+            </div>
+            <div class="location">
+                <h4 class="loc_name">Highland Hospital of Rochester</h4>
+                <p class="descr">description</p>
+            </div>
+            <div class="location">
+                <h4 class="loc_name">Highland Hospital of Rochester</h4>
+                <p class="descr">description</p>
+            </div>
+            <div class="location">
+                <h4 class="loc_name">Highland Hospital of Rochester</h4>
+                <p class="descr">description</p>
+            </div>
+            <div class="location">
+                <h4 class="loc_name">Highland Hospital of Rochester</h4>
+                <p class="descr">description</p>
+            </div>
+            <div class="location">
+                <h4 class="loc_name">Highland Hospital of Rochester</h4>
+                <p class="descr">description</p>
+            </div>
         </div>
     </div>
     <Map
@@ -163,12 +188,11 @@
     :global(.mapboxgl-marker) {
       cursor: pointer;
     }
-    .hosp_list {
-        height: 100%;
+    .container {
+        height: calc(100vh - 4rem);
         width: 25%;
         float: left;
         z-index: 1;
-        overflow-y: scroll;
     }
     .location {
         background-color: #d7d7d7;
@@ -180,6 +204,14 @@
     }
     .descr {
         margin-bottom: 0;
+    }
+    .hosp_list {
+        height: calc(100vh - 4rem - 100px);
+        overflow-y: scroll;
+    }
+    .top {
+        background-color: #5a5a5a;
+        padding: 20px;
     }
 </style>
 
