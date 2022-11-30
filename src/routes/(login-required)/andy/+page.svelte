@@ -6,11 +6,6 @@
 
 
 <body>
-    <head>Stealth
-        <p>
-            Stealth
-        </p>
-    </head>
 
     <button onclick="window.location='andy/make appointment';">Make Appointments</button>    
     <p></p>

@@ -5,12 +5,6 @@
 <!-- Andy's html file -->
 
 <body>
-    <head>Stealth
-        <p>
-            Stealth
-        </p>
-    </head>
-
 
     <h2>
         Current appointments
@@ -106,4 +100,7 @@
     <h2>
         Make a new appointment
     </h2>
+
+    <button onclick="window.location='make appointment';">Make another appointment</button>    
+
 </body>
