@@ -1,7 +1,7 @@
 <!-- author: Katie Lawson -->
 
 <body>
-    <h1>History</h1>
+    <h1>Profile</h1>
     <hr />
 
     <div class="segments">
@@ -32,7 +32,7 @@
                 Past Exams
             </h4>
             <hr />
-            <a href="andy">
+            <a href="katie/past_exams">
                 <img src= "src\lib\images\exray man.png" alt="xray man" href="src\routes\history\+page.svelte"
                     width="200" 
                     height="200">
@@ -51,6 +51,11 @@
                     width="150" 
                     height="150">
             </a>
+            <h5>
+                Current Pharmacy
+            </h5>
+            <h6>put location of current pharmacy</h6>
+            <hr />
             <p>-- UR Medicine Strong Memorial Hospital</p>
             <p>-- Monroe Community Hospital</p>
             <p>-- Unity Specialty Hospital</p>
