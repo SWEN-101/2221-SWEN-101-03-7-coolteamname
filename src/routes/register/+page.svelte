@@ -1,5 +1,5 @@
 <!-- @author Hiroto: Login Page -->
-<script>
+<script lang="ts">
 	import { goto } from '$app/navigation';
 	import logo from '$lib/images/logo.png';
 	import google from '$lib/images/google-logo.png';
@@ -11,8 +11,8 @@
 	} from 'firebase/auth';
 	import { auth } from '../../lib/firebaseConfig';
 
-	let errorCode;
-	let errorMessage;
+	let errorCode:string;
+	let errorMessage:string;
 
 	$: email = '';
 	$: password1 = '';
@@ -28,9 +28,7 @@
 	const onPassword2Blur = () => (passwordFocus = false);
 	const submit = () => {
 		if (password1 != password2) {
-			// @ts-ignore
-			errorCode = 1;
-			// @ts-ignore
+			errorCode = 'Match Password'
 			errorMessage = 'Passwords do not match';
 			return;
 		}
@@ -55,8 +53,7 @@
 			.then((result) => {
 				// This gives you a Google Access Token. You can use it to access the Google API.
 				const credential = GoogleAuthProvider.credentialFromResult(result);
-				// @ts-ignore
-				const token = credential.accessToken;
+				const token = credential?.accessToken;
 				// The signed-in user info.
 				const user = result.user;
 				goto("/register/info")
@@ -74,7 +71,6 @@
 	};
 
 	$: if (errorCode == 'auth/user-not-found') {
-		// @ts-ignore
 		errorMessage = 'User not found';
 	}
 </script>
