@@ -36,6 +36,7 @@
 </script>
 
 <div class="main">
+    <script src="https://kit.fontawesome.com/cc7ada224f.js" crossorigin="anonymous"></script>
     <div class="container">
         <div class="top">
             <h3 style="margin: 0; color:white;">Nearby Hospitals</h3>
@@ -43,47 +44,58 @@
         <div class="hosp_list">
             <div class="location">
                 <h4 class="loc_name">Rochester Institute of Technology</h4>
-                <p class="descr">description</p>
+                <span class="descr">1.1 miles </span>
+                <i class="fa-solid fa-location-dot" style=""></i>
             </div>
             <div class="location">
                 <h4 class="loc_name">UR Medicine Strong Memorial Hospital</h4>
-                <p class="descr">description</p>
+                <span class="descr">5.9 miles </span>
+                <i class="fa-solid fa-location-dot" style=""></i>
             </div>
             <div class="location">
                 <h4 class="loc_name">Monroe Community Hospital</h4>
-                <p class="descr">description</p>
+                <span class="descr">12.2 miles </span>
+                <i class="fa-solid fa-location-dot" style=""></i>
             </div>
             <div class="location">
                 <h4 class="loc_name">Unity Specialty Hospital</h4>
-                <p class="descr">description</p>
+                <span class="descr">13.9 miles </span>
+                <i class="fa-solid fa-location-dot" style=""></i>
             </div>
             <div class="location">
                 <h4 class="loc_name">Rochester General Health System</h4>
-                <p class="descr">description</p>
+                <span class="descr">14 miles </span>
+                <i class="fa-solid fa-location-dot" style=""></i>
             </div>
             <div class="location">
                 <h4 class="loc_name">Highland Hospital of Rochester</h4>
-                <p class="descr">description</p>
+                <span class="descr">14.3 miles </span>
+                <i class="fa-solid fa-location-dot" style=""></i>
             </div>
             <div class="location">
                 <h4 class="loc_name">Highland Hospital of Rochester</h4>
-                <p class="descr">description</p>
+                <span class="descr">16.4 miles </span>
+                <i class="fa-solid fa-location-dot" style=""></i>
             </div>
             <div class="location">
                 <h4 class="loc_name">Highland Hospital of Rochester</h4>
-                <p class="descr">description</p>
+                <span class="descr">11.1 miles </span>
+                <i class="fa-solid fa-location-dot" style=""></i>
             </div>
             <div class="location">
                 <h4 class="loc_name">Highland Hospital of Rochester</h4>
-                <p class="descr">description</p>
+                <span class="descr">11.1 miles </span>
+                <i class="fa-solid fa-location-dot" style=""></i>
             </div>
             <div class="location">
                 <h4 class="loc_name">Highland Hospital of Rochester</h4>
-                <p class="descr">description</p>
+                <span class="descr">11.1 miles </span>
+                <i class="fa-solid fa-location-dot" style=""></i>
             </div>
             <div class="location">
                 <h4 class="loc_name">Highland Hospital of Rochester</h4>
-                <p class="descr">description</p>
+                <span class="descr">3.2 miles </span>
+                <i class="fa-solid fa-location-dot" style=""></i>
             </div>
         </div>
     </div>
@@ -201,12 +213,13 @@
     }
     .loc_name {
         margin: 0;
+        margin-bottom: 10px;
     }
     .descr {
         margin-bottom: 0;
     }
     .hosp_list {
-        height: calc(100vh - 4rem - 100px);
+        height: calc(100vh - 4rem - 63px);
         overflow-y: scroll;
     }
     .top {
