@@ -7,7 +7,7 @@
 
 <body>
 
-	<h2>
+	<h1>
 		<p>
 			You have successfully made an appointment
 		</p>
@@ -16,5 +16,5 @@
 		<button onclick="window.location='/andy/appointment list';">View appointments</button>    
 
 
-	</h2>
+	</h1>
 </body>
