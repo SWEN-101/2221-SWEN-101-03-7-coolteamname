@@ -1,5 +1,5 @@
 <div>
     <p>
-        In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.
+        Stealth is a streamlined application to securely provide the best care to consumers in our own communities and across the world.
     </p>
 </div>
