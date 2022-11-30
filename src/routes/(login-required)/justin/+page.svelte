@@ -21,7 +21,7 @@
     onMount(() => {
         // Usage of methods like setCenter and flyto
         mapComponent.setCenter([lng, lat]); // zoom is optional
-        mapComponent.flyTo({ center: [lng, lat], zoom }); // documentation (https://docs.mapbox.com/mapbox-gl-js/example/flyto)
+        mapComponent.flyTo({ center: [-77.615214, 43.137285], zoom }); // documentation (https://docs.mapbox.com/mapbox-gl-js/example/flyto)
     });
 
     // Define this to handle `eventname` events - see [GeoLocate Events](https://docs.mapbox.com/mapbox-gl-js/api/markers/#geolocatecontrol-events)
@@ -35,8 +35,33 @@
         'pk.eyJ1IjoiaGVyb3BvbiIsImEiOiJjbGExbnAxcnkwOWZ3M3VwcWN5OW0xZmJjIn0.LhqWR4pWb1qsc240GqTuEA';
 </script>
 
-<div class="spacer" />
 <div class="main">
+    <div class="hosp_list">
+        <div>
+            <h3>hosp 1</h3>
+            <p>description</p>
+        </div>
+        <div>
+            <h3>hosp 1</h3>
+            <p>description</p>
+        </div>
+        <div>
+            <h3>hosp 1</h3>
+            <p>description</p>
+        </div>
+        <div>
+            <h3>hosp 1</h3>
+            <p>description</p>
+        </div>
+        <div>
+            <h3>hosp 1</h3>
+            <p>description</p>
+        </div>
+        <div>
+            <h3>hosp 1</h3>
+            <p>description</p>
+        </div>
+    </div>
     <Map
         accessToken={api_key}
         bind:this={mapComponent}
@@ -47,14 +72,49 @@
             {lat}
             {lng}
             color="rgb(247, 105, 2)"
-            label="Rochester Institute of Technology"
+            label={"Rochester Institute of Technology"}
             popupClassName="class-name"
         />
         <Marker
-            {lat2}
-            {lng2}
+            lat={lat2}
+            lng={lng2}
             color="rgb(247, 105, 2)"
-            label="UR Medicine Strong Memorial Hospital"
+            label={"UR Medicine Strong Memorial Hospital"}
+            popupClassName="class-name"
+        />
+        <Marker
+            lat={43.113070}
+            lng={-77.618030}
+            color="rgb(247, 105, 2)"
+            label={"Monroe Community Hospital"}
+            popupClassName="class-name"
+        />
+        <Marker
+            lat={43.14802169799805}
+            lng={-77.63606262207031}
+            color="rgb(247, 105, 2)"
+            label={"Unity Specialty Hospital"}
+            popupClassName="class-name"
+        />
+        <Marker
+            lat={43.15012741088867}
+            lng={-77.59697723388672}
+            color="rgb(247, 105, 2)"
+            label={"Rochester General Health System"}
+            popupClassName="class-name"
+        />
+        <Marker
+            lat={43.13506317138672}
+            lng={-77.50438690185547}
+            color="rgb(247, 105, 2)"
+            label={"Highland Hospital of Rochester"}
+            popupClassName="class-name"
+        />
+        <Marker
+            lat={43.21030807495117}
+            lng={-77.69861602783203}
+            color="rgb(247, 105, 2)"
+            label={"Highland Hospital of Rochester"}
             popupClassName="class-name"
         />
         <NavigationControl />
@@ -73,15 +133,22 @@
         width: 100%;
         z-index: 0;
         padding: 0;
+        display: flex;
+        max-width: none;
     }
     :global(.mapboxgl-map) {
         height: 100px;
-        width: 100px;
-        color: red;
-        margin: 0;
+        width: 80%;
+        color: rgb(247, 105, 2);
+        float: left;
     }
     :global(.mapboxgl-marker) {
       cursor: pointer;
+    }
+    .hosp_list {
+        height: 100px;
+        width: 20%;
+        float: left;
     }
 </style>
 
