@@ -8,7 +8,7 @@
         <div>
             <h4> Past Appointments </h4>
             <hr />
-            <a href="src\routes\history\+page.svelte">
+            <a href="andy">
                 <img src= "src\lib\images\clipboard.png" alt="clipboard" href="src\routes\history\+page.svelte"
                     width="200" 
                     height="200">
@@ -32,7 +32,7 @@
                 Past Exams
             </h4>
             <hr />
-            <a href="src\routes\history\+page.svelte">
+            <a href="andy">
                 <img src= "src\lib\images\exray man.png" alt="xray man" href="src\routes\history\+page.svelte"
                     width="200" 
                     height="200">
@@ -46,14 +46,14 @@
                 Pharmacies Near You
             </h4>
             <hr />
-            <a href="src\routes\history\+page.svelte">
+            <a href="justin">
                 <img src= "src\lib\images\big pharma.png" alt="big pharma" href="src\routes\history\+page.svelte"
                     width="150" 
                     height="150">
             </a>
-            <p>-- This is where the nearest pharmacies will be</p>
-            <p>-- Clicking on any of the pharmacies should hopefully bring the user to the map page, where it will show the location</p>
-            <p>-- We'll see if I can get it to work</p>
+            <p>-- UR Medicine Strong Memorial Hospital</p>
+            <p>-- Monroe Community Hospital</p>
+            <p>-- Unity Specialty Hospital</p>
         </div>
     </div>
 
